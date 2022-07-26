@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./estilos/login.css">
+    <title>Login</title>
+</head>
+<body>
+    <!-- Plano de fundo -->
+    <div class="principal--fundo">
+        <!-- Divisão da tela em duas partes esquerda e direita. Esta é a ESQUERDA com o formulário -->
+        <div class="principal__esquerda">
+            <div class="principal__formulario">
+                <span class="principal__titulo">Login com</span>
+                <!-- Botões das redes sociais -->
+                <div class="principal__redesSociais">
+                    <!-- Botão Facebook -->
+                    <a href="#" class="principal__link" id="facebook">
+                        <div class="principal__rede">  
+                            <img src="./imagens/icones/facebook.png" alt="" class="principal__rede__img">
+                            <span class="principal__rede__nome"id="facebook">Facebook</span>
+                        </div>
+                    </a>
+                    <!-- Botão Google -->
+                    <a href="#" class="principal__link" id="google">
+                        <div class="principal__rede"> 
+                            <img src="./imagens/icones/google.png" alt="" class="principal__rede__img">
+                            <span class="principal__rede__nome" id="google">Google</span>
+                        </div>
+                    </a>
+                </div>
+                <!-- Campos de texto login e senha -->
+                <div class="principal__entradas">
+                    <!-- Campo de usuário -->
+                    <div class="principal__campo">
+                        <div class="principal__campos">
+                            <div class="principal__usuarioTitulo">
+                                <span class="principal__usuario">
+                                    Nome de usuário
+                                </span>
+                            </div>
+                            <input type="text" class="entrada" name="nomeDeUsuario" placeholder="Digite seu usuário">
+                        </div>
+                    </div>
+                    <!-- Campo de senha -->
+                    <div class="principal__campo">
+                        <div class="principal__campos">
+                            <div class="principal__senhaOuEsqueciASenha">
+                                    <span class="principal__usuario">
+                                        Senha
+                                    </span>
+                                    <a href="#" class="principal__esqueciASenha">
+                                        Esqueceu?
+                                    </a>
+                            </div>
+                            <input type="password" class="entrada" name="Senha" placeholder="Digite sua senha">
+                        </div>
+                    </div>
+                </div>
+                <button class="principal__confirmar">
+                    Login
+                </button>
+                <div class="principal__cadastrar">
+                    <span class="naoMembro">
+                        Ainda não se cadastrou?
+                    </span>
+                    <a href="./cadastro.html" class="principal__linkCadastro">Cadastre-se</a>
+                </div>
+            </div>
+        </div>
+                <!-- Divisão da tela em duas partes esquerda e direita. Esta é a DIREITA com as promoções -->
+        <div class="principal__direita">
+            <img src="./imagens/mulherSorrindo.png" alt="Promoção do mês!" class="imagemPromocional">
+        </div>
+    </div>
+</body>
+</html>

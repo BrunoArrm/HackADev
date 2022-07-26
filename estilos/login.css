@@ -1,0 +1,324 @@
+/* Todo o documento */
+* {
+	margin: 0px; 
+	padding: 0px; 
+	box-sizing: border-box;
+}
+
+.principal--fundo {
+    display: flex;
+    flex-direction: row-reverse;
+    width: 100vw;
+    min-width: 200px;
+    min-height: 600px;
+    height: 100vh;
+    color: white;
+    background: url('../imagens/fundo.jpg') no-repeat bottom center scroll;
+    background-position: 30% 45%;
+    background-size: cover;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.principal__direita {
+    display: flex;
+    height: 100vh;
+    width: 50vw;
+    box-sizing: border-box;
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+}
+
+.imagemPromocional {
+    height: 95%;
+}
+
+.principal__esquerda {
+    height: 100vh;
+    width: 50vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+
+/* Bloco do formulário */
+.principal__formulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    align-content: flex-end;
+    box-sizing: border-box;
+    width: 550px;
+    height: 600px;
+    background-color: rgb(237, 237, 237);
+    border-radius: 50px;
+    display: flex;
+    box-shadow: 0px 0px 6px 0px rgba(50, 50, 50, 0.4);
+    align-content: space-around;
+}
+
+.principal__titulo {
+    margin: 20px;
+    color:rgb(76, 76, 76);
+    font-weight: bold;
+    font-size: 28px;
+}
+
+/* Bloco das redes sociais */
+.principal__redesSociais {
+    width: 85%;
+    height: 10%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-content: space-between;
+    align-items: center;
+    justify-content: space-around;
+}
+
+/* Bloco de botões de login com rede social */
+
+.principal__link {
+    width: 45%;
+    height: 100%;
+    margin: 2px;
+    border-radius: 10px;
+    text-decoration: none;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    box-shadow: 0px 0px 11px 2px rgba(0,0,0,0.65);
+}
+
+.principal__link:hover {
+    transition: all 1.5s;
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0px 0px 6px 0px rgba(255, 121, 242, 0.4);
+    background: rgb(0,254,255);
+    background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(29,79,253,1) 48%, rgba(255,0,232,1) 100%);    
+}
+
+.principal__rede {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal__rede__img {
+    height: 30px;
+    margin-right: 10px;;
+}
+
+.principal__rede__nome#facebook {
+    font-size: 22px;
+    color: white;
+    font-weight: bold;
+}
+
+.principal__link#facebook {
+    background-color: #3b5998;
+}
+
+.principal__rede__nome#google {
+    font-size: 22px;
+    color: rgb(76, 76, 76);
+    font-weight: bold;
+}
+
+.principal__link#google {
+    
+}
+
+.principal__social--plataforma {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.principal__social#facebook {
+    background-color:rgb(28,116,244);
+}
+
+.principal__social#google {
+
+}
+
+.principal__icone {
+    padding-right: 5px;
+    width: 30px;
+}
+
+.principal__icone#facebook {
+    margin: 10px;
+    background-color: white;
+    border-radius: 10%;
+}
+
+.principal__rede#google {
+    color: rgb(76, 76, 76);
+}
+
+.principal__rede#facebook {
+    color: white;
+}
+
+/* Bloco dos inputs de usuário e senha */
+.principal__entradas {
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 85%;
+    height: 30%;
+    justify-content: space-between;
+}
+
+.principal__campo {
+    box-sizing: border-box;
+    margin: 5px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    color: rgb(76, 76, 76);
+    font-weight: bold;
+}
+
+.principal__campos {
+    width: 105%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.principal__usuarioTitulo {
+    padding-left: 10px;
+    width: 95%;
+    display: flex;
+    align-items: flex-start;
+}
+
+.principal__senhaOuEsqueciASenha {
+    padding-left: 10px;
+    width: 95%;
+    display: flex;
+    align-items: flex-end;
+
+}
+
+.entrada {
+    padding-left: 10px;
+    width: 95%;
+    height: 50px;
+    border-radius: 10px;
+    border-style: none;
+    background-color: rgb(226, 226, 226);
+}
+
+.entrada:focus {
+    box-shadow: 0 0 0 0;
+    outline: 0;
+    transition: all 1s;
+    transform: scale(1.03);
+    border: 1px solid #ff00c8;
+    border-radius: 10px;
+}
+
+.principal__esqueciASenha {
+    padding: 0px 0px 3px 5px;
+    font-weight: none;
+    color:#9a9a9a;
+    font-size: 10px;
+}
+
+.principal__esqueciASenha:hover {
+    transition: all 1s;
+    color:#ff00c8;
+}
+
+/* Botão Login */
+.principal__confirmar {
+    box-sizing: border-box;
+    width: 85%;
+    height: 10%;
+    border-radius: 10px;
+    border: none;
+    color: white;
+    background-color: rgb(76, 76, 76);
+    font-weight: bold;
+}
+
+.principal__confirmar:hover {
+    transition: all 1.5s;
+    cursor: pointer;
+    transform: scale(1.07);
+    box-shadow: 0px 0px 6px 0px rgba(255, 121, 242, 0.4);
+    background: rgb(0,254,255);
+    background: linear-gradient(90deg, rgba(0,254,255,1) 0%, rgba(29,79,253,1) 48%, rgba(255,0,232,1) 100%);    
+}
+
+/* Cadastrar-se */
+.principal__cadastrar {
+    margin-bottom: 10px;
+    color: rgb(76, 76, 76);
+    display: flex;
+    flex-direction: row;
+}
+
+.principal__linkCadastro {
+    font-weight: bold;
+    color: rgb(76, 76, 76);
+    margin-left: 10px;
+}
+
+.principal__linkCadastro:hover {
+    transition: all 1s;
+    color:#ff00c8;
+}
+
+@media (max-width: 1300px) {
+
+    .principal__direita {
+        display: none;
+    }
+
+    .principal__esquerda {
+        width: 100vw;
+        height: 100vh;
+    }
+
+    .principal__formulario {
+        width: 550px;
+        min-width: 200px;
+        min-height: 600px;
+    }
+    
+}
+
+@media (max-width: 360px) {
+
+    .principal__rede__img {
+        height: 50px;
+        margin-right: 10px;
+    }   
+    
+    .principal__rede__nome {
+        display: none;
+    }
+
+    .principal__cadastrar {
+        margin-bottom: 20px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+}
